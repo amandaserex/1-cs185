@@ -5,14 +5,18 @@
 }
 .body-pic{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(200, auto));
-    grid-row:span 2;
-    grid-column: span 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1rem;
     align-items:center;
     justify-content:center;
 }
 
 .nav-bar{
+    padding: 10px;
     display:flex;
     position:sticky;
+}
+
+.body-projects{
+    padding: 10px;
 }
