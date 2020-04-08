@@ -3,3 +3,16 @@
     padding-right: 15px;
     padding-left: 15px;
 }
+.body-pic{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200, auto));
+    grid-row:span 2;
+    grid-column: span 2;
+    align-items:center;
+    justify-content:center;
+}
+
+.nav-bar{
+    display:flex;
+    position:sticky;
+}
