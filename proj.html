@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="header">
         <h1>Projects</h1>
     </div>
     <div class="nav-bar">
@@ -20,21 +20,38 @@
         <div>
             <a href="video.html">Videos</a>
         </div>
-        <div>
+        <div class="me">
             <a href="proj.html">Projects</a>
         </div>
     </div>
     <div class="body-projects">
-        <div>
-            <a href="https://github.com/ucsb-cs56-w20/lab04-amandaserex">CS56 Lab</a>
+        <div class="p">
+            <a href="https://github.com/ucsb-cs56-w20/lab04-amandaserex"><img src="3.jpeg" style="width: 100px" ></a>
+            <a href="https://github.com/ucsb-cs56-w20/lab04-amandaserex" class = "inside">CS56 Lab</a>
         </div>
-        <div>
-            <a href="https://github.com/amandaserex/cs130a-pa2">Quash Lab - CS130a</a>
+        <div class="p">
+            <a href="https://github.com/amandaserex/cs130a-pa2" ><img src="1.jpeg" style="width: 100px"></a>
+            <a href="https://github.com/amandaserex/cs130a-pa2" class = "inside">Quash Lab - CS130a</a>
         </div>
-        <div>
-            <a href="https://github.com/amandaserex/cs64-lab4">MIPS Usage</a>
+        <div class="p">
+            <a href="https://github.com/amandaserex/cs64-lab4" ><img src="2.jpeg" style="width: 100px " ></a>
+            <a href="https://github.com/amandaserex/cs64-lab4" class = "inside">MIPS Usage</a>
         </div>
+        <button onclick="window.scrollTo(0, 0)" id="to_top">Back to top</button>
     </div>
+
+    <script>
+        topButton = document.getElementById("to_top");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 
 </html>

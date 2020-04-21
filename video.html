@@ -4,10 +4,11 @@
 <head>
     <title>Videos</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div>
+    <div class="header">
         <h1>Some Videos of My Dogs</h1>
     </div>
     <div class="nav-bar">
@@ -17,7 +18,7 @@
         <div>
             <a href="pic.html">Pictures</a>
         </div>
-        <div>
+        <div class="me">
             <a href="video.html">Videos</a>
         </div>
         <div>
@@ -26,25 +27,35 @@
     </div>
     <div class="body-video">
         <div>
-                <video width="320" height="240" controls>
-                        <source src="IMG_5927.mp4" type="video/mp4">
-                      </video>
+            <video controls>
+                <source src="IMG_5927.mp4" type="video/mp4">
+            </video>
         </div>
         <div>
-                <video width="320" height="240" controls>
-                        <source src="IMG_5962.mp4" type="video/mp4">
-                      </video>
+            <video controls>
+                <source src="IMG_5962.mp4" type="video/mp4">
+            </video>
         </div>
         <div>
-                <video width="320" height="240" controls>
-                        <source src="IMG_5963.mp4" type="video/mp4">
-                      </video>
-        </div>
-        <div>
-
+            <video controls>
+                <source src="IMG_5963.mp4" type="video/mp4">
+            </video>
         </div>
 
+        <button onclick="window.scrollTo(0, 0)" id="to_top">Back to top</button>
     </div>
+
+    <script>
+        topButton = document.getElementById("to_top");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

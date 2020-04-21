@@ -4,17 +4,18 @@
 <head>
     <title>Pictures</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="lightbox.js"></script>
 </head>
 
 <body>
-    <div>
+    <div class="header">
         <h1>Pictures</h1>
     </div>
     <div class="nav-bar">
         <div>
             <a href="index.html">Home</a>
         </div>
-        <div>
+        <div class="me">
             <a href="pic.html">Pictures</a>
         </div>
         <div>
@@ -26,25 +27,66 @@
     </div>
     <div class="body-pic">
         <div>
-            <img src="air.jpeg" style="width:200px;">
+            <a href="air.jpeg"><img src="air.jpeg" style="max-width: 100%"></img></a>
         </div>
         <div>
-            <img src="sun.jpeg" style="width:200px">
+            <a href="sun.jpeg" ><img src="sun.jpeg" style="max-width: 100%"></a>
         </div>
         <div>
-            <img src="iv.jpeg" style="width:200px;">
+            <a href="iv.jpeg" ><img src="iv.jpeg" style="max-width: 100%"></a>
         </div>
         <div>
-            <img src="snow.jpeg" style="width:200px;">
+            <a href="snow.jpeg" ><img src="snow.jpeg" style="max-width: 100%"></a>
         </div>
         <div>
-            <img src="sunset.jpeg" style="width:200px">
+            <a href="sunset.jpeg" ><img src="sunset.jpeg" style="max-width: 100%"></a>
         </div>
         <div>
-            <img src="blue.jpeg" style="width:200px">
+            <a href="blue.jpeg" ><img src="blue.jpeg" style="max-width: 100%"></a>
+        </div>
+        <div>
+            <a href="IMG_5940.jpeg" ><img src="IMG_5940.jpeg" style="max-width: 100%"></a>
+        </div>
+        <div>
+            <a href="IMG_5727.jpeg" ><img src="IMG_5727.jpeg" style="max-width: 100%"></a>
+        </div>
+        <div>
+            <a href="IMG_5673.jpeg" ><img src="IMG_5673.jpeg" style="max-width: 100%"></a>
+        </div>
+        <div>
+            <a href="IMG_6060.jpeg" ><img src="IMG_6060.jpeg" style="max-width: 100%"></a>
+        </div>
+        <div>
+            <a href="IMG_6070.jpeg" ><img src="IMG_6070.jpeg" style="max-width: 100%"></a>
+        </div>
+        <div>
+            <a href="IMG_5992.jpeg" ><img src="IMG_5992.jpeg" style="max-width: 100%"></a>
         </div>
 
-    </div>
+    <button onclick="window.scrollTo(0, 0)" id="to_top">Back to top</button>
+</div>
+
+<script>
+    topButton = document.getElementById("to_top");
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+    }
+</script>
+<script>
+    lightClick= document.getElementById("light");
+    lightClick.addEventListener("click", function(){
+        light.style.display = "block";
+    }
+
+</script>
+
+
+
 </body>
 
 </html>
